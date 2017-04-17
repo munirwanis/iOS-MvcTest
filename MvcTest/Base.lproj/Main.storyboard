@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MvcTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iQT-Ye-UZj">
+                                <rect key="frame" x="67" y="84" width="186" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="0dC-73-aZ1"/>
+                                    <constraint firstAttribute="width" constant="186" id="Laf-a6-IJI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bobby" translatesAutoresizingMaskIntoConstraints="NO" id="2Xf-CR-nJ2" customClass="RoundedImageView" customModule="MvcTest" customModuleProvider="target">
+                                <rect key="frame" x="28" y="150" width="264" height="176"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="264" id="Zhr-Fc-5Tg"/>
+                                    <constraint firstAttribute="height" constant="176" id="v0T-6X-gBi"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Insert first name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kdb-rR-0LC">
+                                <rect key="frame" x="67" y="112" width="186" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="186" id="1CI-dE-yuK"/>
+                                    <constraint firstAttribute="height" constant="30" id="axS-fS-ePo"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z52-kU-3jg">
+                                <rect key="frame" x="132" y="471" width="56" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="56" id="4g4-cY-2W7"/>
+                                    <constraint firstAttribute="height" constant="30" id="AEQ-1G-5SA"/>
+                                </constraints>
+                                <state key="normal" title="Rename"/>
+                                <connections>
+                                    <action selector="onRenamePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ML1-C6-JHF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="iQT-Ye-UZj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="64" id="7q9-dD-STU"/>
+                            <constraint firstItem="Z52-kU-3jg" firstAttribute="top" secondItem="2Xf-CR-nJ2" secondAttribute="bottom" constant="145" id="BG1-MM-Wba"/>
+                            <constraint firstItem="kdb-rR-0LC" firstAttribute="top" secondItem="iQT-Ye-UZj" secondAttribute="bottom" constant="7" id="BQb-zd-Zuv"/>
+                            <constraint firstItem="iQT-Ye-UZj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ba3-q6-Rgl"/>
+                            <constraint firstItem="2Xf-CR-nJ2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EQ0-Nm-cVS"/>
+                            <constraint firstItem="kdb-rR-0LC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TtL-55-xfb"/>
+                            <constraint firstItem="Z52-kU-3jg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="W9y-b8-3QO"/>
+                            <constraint firstItem="2Xf-CR-nJ2" firstAttribute="top" secondItem="iQT-Ye-UZj" secondAttribute="bottom" constant="45" id="gfE-Re-BQU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="fullName" destination="iQT-Ye-UZj" id="W4U-Cg-PPz"/>
+                        <outlet property="renameFirstName" destination="kdb-rR-0LC" id="4XY-NH-ZiW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116.25" y="122.53521126760563"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bobby" width="600" height="400"/>
+    </resources>
+</document>
